@@ -287,9 +287,7 @@ class Sample:
         # Init client
         esa_20240910client = Sample.create_esa20240910client()
         # Init resource
-        # esource_RatePlanInstance_ScheduledPreloadJob_test_2
         rate_plan_inst_resp_body = Sample.rate_plan_inst(esa_20240910client)
-        # esource_Site_ScheduledPreloadJob_test_2
         site_resp_body = Sample.site(rate_plan_inst_resp_body, esa_20240910client)
         sched_preload_job_resp_body = Sample.sched_preload_job(site_resp_body, esa_20240910client)
         # destroy resource
@@ -308,9 +306,7 @@ class Sample:
         # Init client
         esa_20240910client = Sample.create_esa20240910client()
         # Init resource
-        # esource_RatePlanInstance_ScheduledPreloadJob_test_2
         rate_plan_inst_resp_body = await Sample.rate_plan_inst_async(esa_20240910client)
-        # esource_Site_ScheduledPreloadJob_test_2
         site_resp_body = await Sample.site_async(rate_plan_inst_resp_body, esa_20240910client)
         sched_preload_job_resp_body = await Sample.sched_preload_job_async(site_resp_body, esa_20240910client)
         # destroy resource

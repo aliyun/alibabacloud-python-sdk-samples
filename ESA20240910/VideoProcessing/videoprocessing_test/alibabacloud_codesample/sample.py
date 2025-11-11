@@ -357,9 +357,7 @@ class Sample:
         # Init client
         esa_20240910client = Sample.create_esa20240910client()
         # Init resource
-        # esource_VideoProcessing_test
         rate_plan_inst_resp_body = Sample.rate_plan_inst(esa_20240910client)
-        # esource_Site_VideoProcessing_test
         site_resp_body = Sample.site(rate_plan_inst_resp_body, esa_20240910client)
         video_proc_resp_body = Sample.video_proc(site_resp_body, esa_20240910client)
         # update resource
@@ -380,9 +378,7 @@ class Sample:
         # Init client
         esa_20240910client = Sample.create_esa20240910client()
         # Init resource
-        # esource_VideoProcessing_test
         rate_plan_inst_resp_body = await Sample.rate_plan_inst_async(esa_20240910client)
-        # esource_Site_VideoProcessing_test
         site_resp_body = await Sample.site_async(rate_plan_inst_resp_body, esa_20240910client)
         video_proc_resp_body = await Sample.video_proc_async(site_resp_body, esa_20240910client)
         # update resource

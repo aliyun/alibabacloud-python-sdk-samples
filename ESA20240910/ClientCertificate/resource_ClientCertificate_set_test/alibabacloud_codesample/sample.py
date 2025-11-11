@@ -379,9 +379,7 @@ class Sample:
         # Init client
         esa_20240910client = Sample.create_esa20240910client()
         # Init resource
-        # esource_RatePlanInstance_ClientCertificate_set_test
         rate_plan_inst_clt_cert_resp_body = Sample.rate_plan_inst_clt_cert(esa_20240910client)
-        # esource_Site_ClientCerticificate_set_test
         site_clt_cert_resp_body = Sample.site_clt_cert(rate_plan_inst_clt_cert_resp_body, esa_20240910client)
         clt_cert_resp_body = Sample.clt_cert(site_clt_cert_resp_body, esa_20240910client)
         # update resource
@@ -404,9 +402,7 @@ class Sample:
         # Init client
         esa_20240910client = Sample.create_esa20240910client()
         # Init resource
-        # esource_RatePlanInstance_ClientCertificate_set_test
         rate_plan_inst_clt_cert_resp_body = await Sample.rate_plan_inst_clt_cert_async(esa_20240910client)
-        # esource_Site_ClientCerticificate_set_test
         site_clt_cert_resp_body = await Sample.site_clt_cert_async(rate_plan_inst_clt_cert_resp_body, esa_20240910client)
         clt_cert_resp_body = await Sample.clt_cert_async(site_clt_cert_resp_body, esa_20240910client)
         # update resource

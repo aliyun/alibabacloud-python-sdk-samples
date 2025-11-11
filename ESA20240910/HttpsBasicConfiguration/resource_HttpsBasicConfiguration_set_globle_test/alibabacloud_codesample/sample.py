@@ -371,9 +371,7 @@ class Sample:
         # Init client
         esa_20240910client = Sample.create_esa20240910client()
         # Init resource
-        # esource_RatePlanInstance_set_globle_test
         rate_plan_inst_resp_body = Sample.rate_plan_inst(esa_20240910client)
-        # esource_HttpBasicConfiguration_set_global_test
         http_basic_conf_resp_body = Sample.http_basic_conf(rate_plan_inst_resp_body, esa_20240910client)
         https_basic_conf_resp_body = Sample.https_basic_conf(http_basic_conf_resp_body, esa_20240910client)
         # update resource
@@ -394,9 +392,7 @@ class Sample:
         # Init client
         esa_20240910client = Sample.create_esa20240910client()
         # Init resource
-        # esource_RatePlanInstance_set_globle_test
         rate_plan_inst_resp_body = await Sample.rate_plan_inst_async(esa_20240910client)
-        # esource_HttpBasicConfiguration_set_global_test
         http_basic_conf_resp_body = await Sample.http_basic_conf_async(rate_plan_inst_resp_body, esa_20240910client)
         https_basic_conf_resp_body = await Sample.https_basic_conf_async(http_basic_conf_resp_body, esa_20240910client)
         # update resource
